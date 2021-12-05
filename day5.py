@@ -2,10 +2,7 @@ from collections import Counter
 
 with open('day5_input.txt') as f:
     input_array = list(map(lambda x: x.split(' -> '), f.read().split('\n')))
-    input_array = [[[int(el1) for el1 in el[0].split(',')], [int(el1) for el1 in el[1].split(',')]] for el in
-                   input_array]
-
-print(input_array)
+    input_array = [[[int(el1) for el1 in el[0].split(',')], [int(el1) for el1 in el[1].split(',')]] for el in input_array]
 
 
 def first_part_func(L):
